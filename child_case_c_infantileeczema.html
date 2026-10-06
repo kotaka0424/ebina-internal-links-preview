@@ -5778,6 +5778,7 @@ font-weight: 700;}
 .access_page .access_parking_map figcaption { margin-top: 8px; font-size: 80%; color: #888; text-align: center; }
 @media (max-width: 767px) {
   .access_page .access_parking_map { margin-bottom: 14px; }
+}
 	
 /* ---- アンカーリンク（pagenav）の文字を少し大きく ---- */
 .access_page .pagenav li a { font-size: 18px; }
@@ -5785,7 +5786,46 @@ font-weight: 700;}
   .access_page .pagenav li a { font-size: 16px; }
 }
 
+/* ==========================================================
+   美容 料金一覧（/beauty/price/）ナビ ul.price_nav 補正（2026-10 ボトックス・ミラノリピール追加に伴う）
+   inside.css の末尾に追記してください。
+   既存の「最後の4項目は下余白0」は項目数が4の倍数（12項目）前提のため、
+   14項目になると3行目の一部だけ高さが10px伸びる段差が出る。
+   → PCでは「最終行の項目だけ」下余白0にする（項目数が何個でも崩れない）。
+   ========================================================== */
+@media (min-width:768px){
+.price_nav > li:nth-last-child(-n+4){
+margin-bottom:10px;}
+
+.price_nav > li:nth-child(4n+1):nth-last-child(-n+4),
+.price_nav > li:nth-child(4n+1):nth-last-child(-n+4) ~ li{
+margin-bottom:0px;}
 }
+
+/* ----------------------------------------------------------
+   料金一覧 ナビのジャンプ先が固定ヘッダーに隠れる問題の補正
+   style.css のアンカー位置調整（padding-top/margin-top のマイナス）が #price01〜#price11 のみのため、
+   #price12（プラズマペン）#price13（ミラノリピール）#price14（ボトックス注射）にも同じ値を当てる。
+   スマホ側は style.css の「#men」の後ろにカンマ抜けがあり #price01 も効いていないため併せて指定。
+   ---------------------------------------------------------- */
+@media (min-width:768px){
+#price12,
+#price13,
+#price14{
+padding-top: 140px;
+margin-top:-140px;
+}
+}
+@media (max-width:767px){
+#price01,
+#price12,
+#price13,
+#price14{
+padding-top: 70px;
+margin-top:-70px;
+}
+}
+
 /* ===== common.css ===== */
 @charset "utf-8";
 
@@ -7350,7 +7390,7 @@ body.demo-off .demo-new-block::before{display:none;}
 
 
 
-<p>食べ物や繊維の刺激に触れやすい、口や顎の周りを中心に、顔面、頭部、首回り、手首、足首などに生じます。乳児湿疹には、<span class="demo-new"><b class="case_link_btn"><a href="child_case_c_heatrash.html">あせも</a></b></span>や新生児ニキビ、脂漏性湿疹、<span class="demo-new"><b class="case_link_btn"><a href="adult_case_atopic.html">アトピー性皮膚炎</a></b></span>と確定診断されていない湿疹などが含まれます。
+<p>食べ物や繊維の刺激に触れやすい、口や顎の周りを中心に、顔面、頭部、首回り、手首、足首などに生じます。乳児湿疹には、あせもや新生児ニキビ、脂漏性湿疹、アトピー性皮膚炎と確定診断されていない湿疹などが含まれます。
 </p>
 
 
@@ -7379,7 +7419,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <p><!--end div#box--></div>
 <div class="box">
 <h2 class="inside_headline">乳児湿疹で医療機関を受診する目安</h2>
-<p>多くの乳児湿疹の症状は、積極的な治療を行わなくても、成長とともに自然に治癒していくケースが多いです。一方で症状が長引いていたり、赤みやかゆみを伴っていたりする場合は、アトピー性皮膚炎に罹っている可能性もあるため、乳児湿疹が疑われる場合は医療機関を受診するようにしましょう。</p>
+<p>多くの乳児湿疹の症状は、積極的な治療を行わなくても、成長とともに自然に治癒していくケースが多いです。一方で症状が長引いていたり、赤みやかゆみを伴っていたりする場合は、<span class="demo-new"><b class="case_link_btn"><a href="adult_case_atopic.html">アトピー性皮膚炎</a></b></span>に罹っている可能性もあるため、乳児湿疹が疑われる場合は医療機関を受診するようにしましょう。</p>
 <p><!--end div#box--></div>
 <div class="box" id="case04">
 <h2 class="inside_headline">乳児湿疹の治療</h2>
