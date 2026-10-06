@@ -7194,7 +7194,7 @@ $(document).ready(function() {
 <style id="demo-only">
 .demo-new{background:#fff3b0;outline:2px dashed #e0a800;outline-offset:1px;}
 .demo-new-block{outline:3px dashed #e0a800;outline-offset:8px;position:relative;margin-bottom:30px;}
-.demo-new-block::before{content:"追加：関連コラム・次に読むカード";position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
+.demo-new-block::before{content:attr(data-label);position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
 body.demo-off .demo-new{background:none;outline:none;}
 body.demo-off .demo-new-block{outline:none;}
 body.demo-off .demo-new-block::before{display:none;}
@@ -7437,7 +7437,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <p><!--end div#inside_outside--></div>
 <div class="inside_outside_b_short">
 <div class="contents">
-<div class="demo-new-block">
+<div class="demo-new-block" data-label="追加：次に読むカード・関連する治療">
 <h2 class="inside_headline">あわせて読みたい 子どもの皮膚トラブル</h2>
 <ul class="case_flex">
 <li><a href="child_case_c_heatrash.html"><h3 class="case_title">あせも</h3>

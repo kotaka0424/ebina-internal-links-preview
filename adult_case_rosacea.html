@@ -7194,7 +7194,7 @@ $(document).ready(function() {
 <style id="demo-only">
 .demo-new{background:#fff3b0;outline:2px dashed #e0a800;outline-offset:1px;}
 .demo-new-block{outline:3px dashed #e0a800;outline-offset:8px;position:relative;margin-bottom:30px;}
-.demo-new-block::before{content:"追加：関連コラム・次に読むカード";position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
+.demo-new-block::before{content:attr(data-label);position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
 body.demo-off .demo-new{background:none;outline:none;}
 body.demo-off .demo-new-block{outline:none;}
 body.demo-off .demo-new-block::before{display:none;}
@@ -7477,20 +7477,22 @@ body.demo-off .demo-new-block::before{display:none;}
 <p>寛解までの治療は長期にわたることがあります。個々の治療への反応にもよりますが、数か月から年単位の管理が必要になります。</p>
 </details>
 </div>
+<div class="demo-new-block" data-label="追加：関連コラム（コラム詳細の関連記事デザイン）">
+<div class="mc_related_box mgn_top30">
+<span class="mc_related_title">関連記事</span>
+<p class="mc_bt_ichiran"><a href="https://ebinahifu.com/medical_column/">一覧を見る</a></p>
+<dl class="mc_related_dl">
+<dt><a href="https://ebinahifu.com/medical_column/v%e3%83%93%e3%83%bc%e3%83%a0%e3%81%a7%e6%94%b9%e5%96%84%e3%81%97%e3%81%aa%e3%81%84%e8%b5%a4%e3%82%89%e9%a1%94%e3%81%ab%e3%80%81%e5%bd%93%e9%99%a2%e3%81%8c%e3%83%80%e3%83%96%e3%83%ab%e3%82%b8%e3%82%a7/">2026/06/24</a></dt>
+<dd><a href="https://ebinahifu.com/medical_column/v%e3%83%93%e3%83%bc%e3%83%a0%e3%81%a7%e6%94%b9%e5%96%84%e3%81%97%e3%81%aa%e3%81%84%e8%b5%a4%e3%82%89%e9%a1%94%e3%81%ab%e3%80%81%e5%bd%93%e9%99%a2%e3%81%8c%e3%83%80%e3%83%96%e3%83%ab%e3%82%b8%e3%82%a7/"><p><span class="mc_related_cate">赤ら顔・酒さ</span></p><p>Vビームで改善しない赤ら顔に、当院がダブルジェネシスをお勧めする理由とは</p></a></dd>
+</dl>
+<!--end div#mc_related_box--></div>
+</div>
 <p>    <!--end div#contents-->
 </div>
 <p><!--end div#inside_outside--></div>
 <div class="inside_outside_b_short">
 <div class="contents">
-<div class="demo-new-block">
-<h2 class="inside_headline">関連する医療コラム</h2>
-<div class="mgn_btm30">
-<dl class="mc_ichiran_dl">
-<dt><span class="mc_date"><a href="https://ebinahifu.com/medical_column/v%e3%83%93%e3%83%bc%e3%83%a0%e3%81%a7%e6%94%b9%e5%96%84%e3%81%97%e3%81%aa%e3%81%84%e8%b5%a4%e3%82%89%e9%a1%94%e3%81%ab%e3%80%81%e5%bd%93%e9%99%a2%e3%81%8c%e3%83%80%e3%83%96%e3%83%ab%e3%82%b8%e3%82%a7/">2026年6月24日</a></span><span class="mc_ichiran_cate"><a href="https://ebinahifu.com/medical_column/medical_column_cate/rosacea/" rel="tag">赤ら顔・酒さ</a></span></dt>
-<dd><a href="https://ebinahifu.com/medical_column/v%e3%83%93%e3%83%bc%e3%83%a0%e3%81%a7%e6%94%b9%e5%96%84%e3%81%97%e3%81%aa%e3%81%84%e8%b5%a4%e3%82%89%e9%a1%94%e3%81%ab%e3%80%81%e5%bd%93%e9%99%a2%e3%81%8c%e3%83%80%e3%83%96%e3%83%ab%e3%82%b8%e3%82%a7/"><p class="txt_700">Vビームで改善しない赤ら顔に、当院がダブルジェネシスをお勧めする理由とは</p>
-<p>「他のクリニックでVビームを繰り返したのに、赤みがなかなか引かない」「保険適用でVビームを受けているが、効果に物足りなさを感じる」——赤ら顔…</p></a></dd>
-</dl>
-</div>
+<div class="demo-new-block" data-label="追加：次に読むカード・関連する治療">
 <h2 class="inside_headline">あわせて読みたい 関連する皮膚の病気</h2>
 <ul class="case_flex">
 <li><a href="adult_case_acne.html"><h3 class="case_title">ニキビ・ニキビ痕</h3>

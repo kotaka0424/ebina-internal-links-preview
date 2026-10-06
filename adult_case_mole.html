@@ -7194,7 +7194,7 @@ $(document).ready(function() {
 <style id="demo-only">
 .demo-new{background:#fff3b0;outline:2px dashed #e0a800;outline-offset:1px;}
 .demo-new-block{outline:3px dashed #e0a800;outline-offset:8px;position:relative;margin-bottom:30px;}
-.demo-new-block::before{content:"追加：関連コラム・次に読むカード";position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
+.demo-new-block::before{content:attr(data-label);position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
 body.demo-off .demo-new{background:none;outline:none;}
 body.demo-off .demo-new-block{outline:none;}
 body.demo-off .demo-new-block::before{display:none;}
@@ -7632,20 +7632,22 @@ body.demo-off .demo-new-block::before{display:none;}
 </p>
 </details>
 </div>
+<div class="demo-new-block" data-label="追加：関連コラム（コラム詳細の関連記事デザイン）">
+<div class="mc_related_box mgn_top30">
+<span class="mc_related_title">関連記事</span>
+<p class="mc_bt_ichiran"><a href="https://ebinahifu.com/medical_column/">一覧を見る</a></p>
+<dl class="mc_related_dl">
+<dt><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/">2026/06/05</a></dt>
+<dd><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/"><p><span class="mc_related_cate">その他</span></p><p>当院が皮膚外科・形成外科手術を多くご依頼いただける理由とは？</p></a></dd>
+</dl>
+<!--end div#mc_related_box--></div>
+</div>
 <p>    <!--end div#contents-->
 </div>
 <p><!--end div#inside_outside--></div>
 <div class="inside_outside_b_short">
 <div class="contents">
-<div class="demo-new-block">
-<h2 class="inside_headline">関連する医療コラム</h2>
-<div class="mgn_btm30">
-<dl class="mc_ichiran_dl">
-<dt><span class="mc_date"><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/">2026年6月5日</a></span><span class="mc_ichiran_cate"><a href="https://ebinahifu.com/medical_column/medical_column_cate/%e3%81%9d%e3%81%ae%e4%bb%96/" rel="tag">その他</a></span></dt>
-<dd><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/"><p class="txt_700">当院が皮膚外科・形成外科手術を多くご依頼いただける理由とは？</p>
-<p>おかげさまで皮膚科医になって15年以上が経ち、手術件数は10,000件を超えました。最近は特に、他院でのほくろ除去後の再手術など、整容面での…</p></a></dd>
-</dl>
-</div>
+<div class="demo-new-block" data-label="追加：次に読むカード・関連する治療">
 <h2 class="inside_headline">あわせて読みたい 関連する皮膚の病気</h2>
 <ul class="case_flex">
 <li><a href="adult_sk.html"><h3 class="case_title">脂漏性角化症</h3>

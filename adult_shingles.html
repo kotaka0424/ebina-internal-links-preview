@@ -7194,7 +7194,7 @@ $(document).ready(function() {
 <style id="demo-only">
 .demo-new{background:#fff3b0;outline:2px dashed #e0a800;outline-offset:1px;}
 .demo-new-block{outline:3px dashed #e0a800;outline-offset:8px;position:relative;margin-bottom:30px;}
-.demo-new-block::before{content:"追加：関連コラム・次に読むカード";position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
+.demo-new-block::before{content:attr(data-label);position:absolute;top:-34px;right:0;background:#e0a800;color:#fff;font-size:12px;padding:2px 8px;}
 body.demo-off .demo-new{background:none;outline:none;}
 body.demo-off .demo-new-block{outline:none;}
 body.demo-off .demo-new-block::before{display:none;}
@@ -7562,20 +7562,22 @@ body.demo-off .demo-new-block::before{display:none;}
 </div>
 
 --><br />
+<div class="demo-new-block" data-label="追加：関連コラム（コラム詳細の関連記事デザイン）">
+<div class="mc_related_box mgn_top30">
+<span class="mc_related_title">関連記事</span>
+<p class="mc_bt_ichiran"><a href="https://ebinahifu.com/medical_column/">一覧を見る</a></p>
+<dl class="mc_related_dl">
+<dt><a href="https://ebinahifu.com/medical_column/%e5%b8%af%e7%8a%b6%e7%96%b1%e7%96%b9%e3%81%ae%e3%83%af%e3%82%af%e3%83%81%e3%83%b3%e3%81%af%e4%bd%95%e6%ad%b3%e3%81%8b%e3%82%89%e6%a4%9c%e8%a8%8e%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9f-%e7%9a%ae%e8%86%9a/">2026/09/06</a></dt>
+<dd><a href="https://ebinahifu.com/medical_column/%e5%b8%af%e7%8a%b6%e7%96%b1%e7%96%b9%e3%81%ae%e3%83%af%e3%82%af%e3%83%81%e3%83%b3%e3%81%af%e4%bd%95%e6%ad%b3%e3%81%8b%e3%82%89%e6%a4%9c%e8%a8%8e%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9f-%e7%9a%ae%e8%86%9a/"><p><span class="mc_related_cate">帯状疱疹</span></p><p>帯状疱疹のワクチンは何歳から検討すべき？ 皮膚科専門医が解説</p></a></dd>
+</dl>
+<!--end div#mc_related_box--></div>
+</div>
     <!--end div#contents-->
 </div>
 <p><!--end div#inside_outside--></div>
 <div class="inside_outside_b_short">
 <div class="contents">
-<div class="demo-new-block">
-<h2 class="inside_headline">関連する医療コラム</h2>
-<div class="mgn_btm30">
-<dl class="mc_ichiran_dl">
-<dt><span class="mc_date"><a href="https://ebinahifu.com/medical_column/%e5%b8%af%e7%8a%b6%e7%96%b1%e7%96%b9%e3%81%ae%e3%83%af%e3%82%af%e3%83%81%e3%83%b3%e3%81%af%e4%bd%95%e6%ad%b3%e3%81%8b%e3%82%89%e6%a4%9c%e8%a8%8e%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9f-%e7%9a%ae%e8%86%9a/">2026年9月6日</a></span><span class="mc_ichiran_cate"><a href="https://ebinahifu.com/medical_column/medical_column_cate/shingles/" rel="tag">帯状疱疹</a></span></dt>
-<dd><a href="https://ebinahifu.com/medical_column/%e5%b8%af%e7%8a%b6%e7%96%b1%e7%96%b9%e3%81%ae%e3%83%af%e3%82%af%e3%83%81%e3%83%b3%e3%81%af%e4%bd%95%e6%ad%b3%e3%81%8b%e3%82%89%e6%a4%9c%e8%a8%8e%e3%81%99%e3%81%b9%e3%81%8d%ef%bc%9f-%e7%9a%ae%e8%86%9a/"><p class="txt_700">帯状疱疹のワクチンは何歳から検討すべき？ 皮膚科専門医が解説</p>
-<p>「最近、周りで帯状疱疹になったという話をよく聞くようになった」「自分もそろそろワクチンを考えたほうがいいのだろうか」ーそうしたお声を外来でう…</p></a></dd>
-</dl>
-</div>
+<div class="demo-new-block" data-label="追加：次に読むカード・関連する治療">
 <h2 class="inside_headline">あわせて読みたい 関連する皮膚の病気</h2>
 <ul class="case_flex">
 <li><a href="adult_coldsore.html"><h3 class="case_title">ヘルペス</h3>
