@@ -8534,7 +8534,7 @@ Use the following classes to style your popular posts list as you like.
   .pc_cta3 .t3 { display: block; font-size: 13px; font-family: Rubik, sans-serif; font-weight: 500; letter-spacing: .02em; margin-top: 1px; }
   .pc_cta3 .t3 i { font-size: 85%; margin-right: 4px; }
 }
-</style><style>/* beauty_internal_links_added.css */
+</style><style>/* beauty_internal_links_added.css + product_internal_links_added.css */
 /* ===== internal links: beauty (greige) / append to the end of inside.css ===== */
 #beautypage .case_flex li{border-top-color:#a68b62;}
 #beautypage .case_title{color:#a68b62;}
@@ -8542,6 +8542,7 @@ Use the following classes to style your popular posts list as you like.
 #beautypage .mc_bt_ichiran{background-color:#a68b62;}
 #beautypage .mc_related_box .mc_related_title::before{color:#a68b62;}
 /* new-design (Bootstrap) pages: neutralize Bootstrap list/link defaults inside the added blocks */
+#beautypage .bil-wrap{font-family:"M PLUS 1p",sans-serif;}  /* LP body font is Noto Serif JP: match the classic pages */
 #beautypage .bil-wrap .case_flex{padding-left:0;margin-bottom:0;}
 #beautypage .bil-wrap .case_title{color:#a68b62 !important;font-size:17px !important;line-height:1.6 !important;font-weight:500 !important;font-family:"M PLUS 1p",sans-serif;}  /* lp_style sets h3 with !important: match the classic card title */
 @media (max-width:767px){#beautypage .bil-wrap .case_title{font-size:14px !important;}}
@@ -8550,6 +8551,17 @@ Use the following classes to style your popular posts list as you like.
 #beautypage .bil-wrap .mc_related_dl dd p{margin-bottom:0;}
 #beautypage .bil-wrap a{text-decoration:none;}
 #beautypage .bil-wrap .case_link_btn a,#beautypage .bil-wrap .mc_related_dl dd a{text-decoration:underline;}
+/* ===== internal links: product pages (new design in the general pink template) / append to the end of inside.css ===== */
+/* .bil-wrap exists only in the added blocks on new-design (Bootstrap) pages, so classic pages are not affected */
+#medical_inside .bil-wrap{font-family:"M PLUS 1p",sans-serif;}
+#medical_inside .bil-wrap .case_flex{padding-left:0;margin-bottom:0;}
+#medical_inside .bil-wrap .case_title{color:#E09696 !important;font-size:17px !important;line-height:1.6 !important;font-weight:500 !important;font-family:"M PLUS 1p",sans-serif;}
+@media (max-width:767px){#medical_inside .bil-wrap .case_title{font-size:14px !important;}}
+#medical_inside .bil-wrap h2.title_line{font-size:18px !important;line-height:1.6 !important;color:#E09696 !important;letter-spacing:normal;font-weight:500;font-family:"M PLUS 1p",sans-serif;}
+@media (max-width:767px){#medical_inside .bil-wrap h2.title_line{font-size:14px !important;}}
+#medical_inside .bil-wrap .mc_related_dl dd p{margin-bottom:0;}
+#medical_inside .bil-wrap a{text-decoration:none;}
+#medical_inside .bil-wrap .case_link_btn a,#medical_inside .bil-wrap .mc_related_dl dd a{text-decoration:underline;}
 
 .wrap_anime01{opacity:1!important;transform:none!important;}
 </style>
@@ -8622,7 +8634,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <li class="submenu__item"><a href="beauty_shot.html">美白&amp;にんにく注射</a></li>
 <li class="submenu__item"><a href="beauty_placenta.html">プラセンタ注射</a></li>
 <li class="submenu__item"><a href="beauty_botox.html">ボトックス注射</a></li>
-<li class="submenu__item"><a href="https://ebinahifu.com/beauty/waki-botox/">わきボトックス</a></li>
+<li class="submenu__item"><a href="beauty_waki-botox.html">わきボトックス</a></li>
 </ul>
 </li>
 
@@ -8906,6 +8918,16 @@ $('.drawer_nav li.bt_link_access a').click(function () {
 <summary>ケミカルピーリングの施術に副作用はありますか？</summary>
 <p>ケミカルピーリングの副作用として、施術後に一時的な赤みや乾燥がみられることがありますが、通常数日以内に治まります。施術後の肌を刺激から守り、必要に応じて医師の指示に従ったケアを行うことで、これらの副作用を最小限に抑えることが可能です。もし気になる症状が続く場合は、早めに医師にご相談ください。</p>
 </details>
+</div>
+<div class="demo-new-block" data-label="追加：関連記事（コラム詳細と同じデザイン）">
+<div class="mc_related_box mgn_top30">
+<span class="mc_related_title">関連記事</span>
+<p class="mc_bt_ichiran"><a href="https://ebinahifu.com/medical_column/">一覧を見る</a></p>
+<dl class="mc_related_dl">
+<dt><a href="https://ebinahifu.com/medical_column/%e3%83%94%e3%83%bc%e3%83%aa%e3%83%b3%e3%82%b0%e3%81%af%e8%87%aa%e5%ae%85%e3%83%bb%e3%82%a8%e3%82%b9%e3%83%86%e3%83%bb%e3%82%af%e3%83%aa%e3%83%8b%e3%83%83%e3%82%af%e3%81%a7%e4%bd%95%e3%81%8c%e9%81%95/">2026/11/16</a></dt>
+<dd><a href="https://ebinahifu.com/medical_column/%e3%83%94%e3%83%bc%e3%83%aa%e3%83%b3%e3%82%b0%e3%81%af%e8%87%aa%e5%ae%85%e3%83%bb%e3%82%a8%e3%82%b9%e3%83%86%e3%83%bb%e3%82%af%e3%83%aa%e3%83%8b%e3%83%83%e3%82%af%e3%81%a7%e4%bd%95%e3%81%8c%e9%81%95/"><p><span class="mc_related_cate">ニキビ・ニキビ痕</span></p><p>ピーリングは自宅・エステ・クリニックで何が違う？皮膚科専門医が教えるケミカルピーリングの効果と正しい選び方</p></a></dd>
+</dl>
+<!--end div#mc_related_box--></div>
 </div>
 <p><!--end div#contents-->
 </div>

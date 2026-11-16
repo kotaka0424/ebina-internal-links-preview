@@ -8534,7 +8534,7 @@ Use the following classes to style your popular posts list as you like.
   .pc_cta3 .t3 { display: block; font-size: 13px; font-family: Rubik, sans-serif; font-weight: 500; letter-spacing: .02em; margin-top: 1px; }
   .pc_cta3 .t3 i { font-size: 85%; margin-right: 4px; }
 }
-</style><style>/* beauty_internal_links_added.css */
+</style><style>/* beauty_internal_links_added.css + product_internal_links_added.css */
 /* ===== internal links: beauty (greige) / append to the end of inside.css ===== */
 #beautypage .case_flex li{border-top-color:#a68b62;}
 #beautypage .case_title{color:#a68b62;}
@@ -8542,6 +8542,7 @@ Use the following classes to style your popular posts list as you like.
 #beautypage .mc_bt_ichiran{background-color:#a68b62;}
 #beautypage .mc_related_box .mc_related_title::before{color:#a68b62;}
 /* new-design (Bootstrap) pages: neutralize Bootstrap list/link defaults inside the added blocks */
+#beautypage .bil-wrap{font-family:"M PLUS 1p",sans-serif;}  /* LP body font is Noto Serif JP: match the classic pages */
 #beautypage .bil-wrap .case_flex{padding-left:0;margin-bottom:0;}
 #beautypage .bil-wrap .case_title{color:#a68b62 !important;font-size:17px !important;line-height:1.6 !important;font-weight:500 !important;font-family:"M PLUS 1p",sans-serif;}  /* lp_style sets h3 with !important: match the classic card title */
 @media (max-width:767px){#beautypage .bil-wrap .case_title{font-size:14px !important;}}
@@ -8550,6 +8551,17 @@ Use the following classes to style your popular posts list as you like.
 #beautypage .bil-wrap .mc_related_dl dd p{margin-bottom:0;}
 #beautypage .bil-wrap a{text-decoration:none;}
 #beautypage .bil-wrap .case_link_btn a,#beautypage .bil-wrap .mc_related_dl dd a{text-decoration:underline;}
+/* ===== internal links: product pages (new design in the general pink template) / append to the end of inside.css ===== */
+/* .bil-wrap exists only in the added blocks on new-design (Bootstrap) pages, so classic pages are not affected */
+#medical_inside .bil-wrap{font-family:"M PLUS 1p",sans-serif;}
+#medical_inside .bil-wrap .case_flex{padding-left:0;margin-bottom:0;}
+#medical_inside .bil-wrap .case_title{color:#E09696 !important;font-size:17px !important;line-height:1.6 !important;font-weight:500 !important;font-family:"M PLUS 1p",sans-serif;}
+@media (max-width:767px){#medical_inside .bil-wrap .case_title{font-size:14px !important;}}
+#medical_inside .bil-wrap h2.title_line{font-size:18px !important;line-height:1.6 !important;color:#E09696 !important;letter-spacing:normal;font-weight:500;font-family:"M PLUS 1p",sans-serif;}
+@media (max-width:767px){#medical_inside .bil-wrap h2.title_line{font-size:14px !important;}}
+#medical_inside .bil-wrap .mc_related_dl dd p{margin-bottom:0;}
+#medical_inside .bil-wrap a{text-decoration:none;}
+#medical_inside .bil-wrap .case_link_btn a,#medical_inside .bil-wrap .mc_related_dl dd a{text-decoration:underline;}
 
 .wrap_anime01{opacity:1!important;transform:none!important;}
 </style>
@@ -8622,7 +8634,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <li class="submenu__item"><a href="beauty_shot.html">美白&amp;にんにく注射</a></li>
 <li class="submenu__item"><a href="beauty_placenta.html">プラセンタ注射</a></li>
 <li class="submenu__item"><a href="beauty_botox.html">ボトックス注射</a></li>
-<li class="submenu__item"><a href="https://ebinahifu.com/beauty/waki-botox/">わきボトックス</a></li>
+<li class="submenu__item"><a href="beauty_waki-botox.html">わきボトックス</a></li>
 </ul>
 </li>
 
