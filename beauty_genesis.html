@@ -8623,6 +8623,10 @@ Use the following classes to style your popular posts list as you like.
 #medical_inside .bil-wrap a{text-decoration:none;}
 #medical_inside .bil-wrap .case_link_btn a,#medical_inside .bil-wrap .mc_related_dl dd a{text-decoration:underline;}
 
+/* in-text links on new-design pages: lp_style's a:link{text-decoration:none} cancels the theme's .case_link_btn underline (added 2026-11-26) */
+#beautypage .case_link_btn a:link,#beautypage .case_link_btn a:visited,#medical_inside .case_link_btn a:link,#medical_inside .case_link_btn a:visited{text-decoration:underline;}
+/* plain in-text links in new-design body copy (.font-go paragraphs / price table cells); class-less links only, so buttons are not affected */
+#beautypage .font-go p > a:not([class]):link,#beautypage .font-go p > a:not([class]):visited,#beautypage .table-price td > a:not([class]):link,#beautypage .table-price td > a:not([class]):visited{text-decoration:underline;}
 .wrap_anime01{opacity:1!important;transform:none!important;}
 </style>
 <meta name="robots" content="noindex, nofollow">
