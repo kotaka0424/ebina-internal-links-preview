@@ -7207,7 +7207,67 @@ line-height: 1.6;
 
     }
 }
-/* -------------end------------- */  
+/* -------------end------------- */
+
+/* =========================================
+ *  医療コラム：図鑑レイアウト（写真＋解説の横並び）
+ *  css/wp.css の末尾に追記
+ *  使用: 医療コラム「イボの種類図鑑」ほか
+ ==========================================*/
+.mc_zukan {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.mc_zukan_photo {
+  flex: 0 0 40%;
+  margin: 0;
+}
+.mc_zukan_photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.mc_zukan_photo figcaption {
+  margin-top: 6px;
+  font-size: 85%;
+  line-height: 1.4;
+  color: #777;
+  text-align: center;
+}
+/* AI生成画像の注記（キャプション内の2行目） */
+.mc_zukan_ai {
+  display: block;
+  margin-top: 2px;
+  font-size: 90%;
+  color: #999;
+}
+.mc_zukan_text {
+  flex: 1;
+  min-width: 0;
+}
+.mc_box .mc_zukan_text p:last-child {
+  margin-bottom: 0;
+}
+/* 小さい画面用の設定-------------- */
+@media (max-width:767px) {
+  .mc_zukan {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .mc_zukan_photo {
+    flex: none;
+    width: 75%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+/* -------------end------------- */
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -7613,6 +7673,8 @@ body.demo-off .demo-new-block::before{display:none;}
 <dl class="mc_related_dl">
 <dt><a href="https://ebinahifu.com/medical_column/%e7%b2%89%e7%98%a4%e3%82%92%e3%82%b9%e3%83%94%e3%83%bc%e3%83%87%e3%82%a3%e3%83%bc%e3%81%ab%e9%99%a4%e5%8e%bb%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%8c%e3%81%8f%e3%82%8a%e3%81%ac%e3%81%8d%e6%b3%95%e3%83%bb/">2026/07/06</a></dt>
 <dd><a href="https://ebinahifu.com/medical_column/%e7%b2%89%e7%98%a4%e3%82%92%e3%82%b9%e3%83%94%e3%83%bc%e3%83%87%e3%82%a3%e3%83%bc%e3%81%ab%e9%99%a4%e5%8e%bb%e3%81%a7%e3%81%8d%e3%82%8b%e3%80%8c%e3%81%8f%e3%82%8a%e3%81%ac%e3%81%8d%e6%b3%95%e3%83%bb/"><p><span class="mc_related_cate">粉瘤</span></p><p>粉瘤をスピーディーに除去できる「くりぬき法・へそ抜き法」とは？</p></a></dd>
+<dt><a href="https://ebinahifu.com/medical_column/%e3%80%90%e3%82%a4%e3%83%9c%e3%81%ae%e7%a8%ae%e9%a1%9e%e5%9b%b3%e9%91%91%e3%80%91%e9%a1%94%e3%82%84%e9%a6%96%e3%81%ae%e3%83%9d%e3%83%84%e3%83%9d%e3%83%84%e3%81%ae%e6%ad%a3%e4%bd%93%e3%81%af%ef%bc%9f/">2026/11/17</a></dt>
+<dd><a href="https://ebinahifu.com/medical_column/%e3%80%90%e3%82%a4%e3%83%9c%e3%81%ae%e7%a8%ae%e9%a1%9e%e5%9b%b3%e9%91%91%e3%80%91%e9%a1%94%e3%82%84%e9%a6%96%e3%81%ae%e3%83%9d%e3%83%84%e3%83%9d%e3%83%84%e3%81%ae%e6%ad%a3%e4%bd%93%e3%81%af%ef%bc%9f/"><p><span class="mc_related_cate">イボ</span></p><p>顔や首にできるイボの種類とは？12種類の症状と治療法を皮膚科専門医が解説！</p></a></dd>
 <dt><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/">2026/06/05</a></dt>
 <dd><a href="https://ebinahifu.com/medical_column/%e5%bd%93%e9%99%a2%e3%81%8c%e7%9a%ae%e8%86%9a%e5%a4%96%e7%a7%91%e3%83%bb%e5%bd%a2%e6%88%90%e5%a4%96%e7%a7%91%e6%89%8b%e8%a1%93%e3%82%92%e5%a4%9a%e3%81%8f%e3%81%94%e4%be%9d%e9%a0%bc%e3%81%84%e3%81%9f/"><p><span class="mc_related_cate">その他</span></p><p>当院が皮膚外科・形成外科手術を多くご依頼いただける理由とは？</p></a></dd>
 </dl>
@@ -7660,7 +7722,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <dd>
 <p>小谷 和弘</p>
 <p class="link_line"><a href="https://ebinahifu.com/hello">海老名皮フ科クリニック 理事長・院長</a></p>
-<p>日本皮膚科学会 皮膚科専門医</p>
+<p>日本専門医機構認定皮膚科専門医<br class="only_smt">（旧：日本皮膚科学会認定皮膚科専門医）</p>
 <p>厚生労働省指定 麻酔科標榜医</p>
 <p>日本内科学会 認定内科医</p>
 </dd>

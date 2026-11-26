@@ -7207,7 +7207,67 @@ line-height: 1.6;
 
     }
 }
-/* -------------end------------- */  
+/* -------------end------------- */
+
+/* =========================================
+ *  医療コラム：図鑑レイアウト（写真＋解説の横並び）
+ *  css/wp.css の末尾に追記
+ *  使用: 医療コラム「イボの種類図鑑」ほか
+ ==========================================*/
+.mc_zukan {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+.mc_zukan_photo {
+  flex: 0 0 40%;
+  margin: 0;
+}
+.mc_zukan_photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.mc_zukan_photo figcaption {
+  margin-top: 6px;
+  font-size: 85%;
+  line-height: 1.4;
+  color: #777;
+  text-align: center;
+}
+/* AI生成画像の注記（キャプション内の2行目） */
+.mc_zukan_ai {
+  display: block;
+  margin-top: 2px;
+  font-size: 90%;
+  color: #999;
+}
+.mc_zukan_text {
+  flex: 1;
+  min-width: 0;
+}
+.mc_box .mc_zukan_text p:last-child {
+  margin-bottom: 0;
+}
+/* 小さい画面用の設定-------------- */
+@media (max-width:767px) {
+  .mc_zukan {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .mc_zukan_photo {
+    flex: none;
+    width: 75%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+/* -------------end------------- */
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -7467,7 +7527,7 @@ body.demo-off .demo-new-block::before{display:none;}
 <dd>
 <p>小谷 和弘</p>
 <p class="link_line"><a href="https://ebinahifu.com/hello/">海老名皮フ科クリニック 理事長・院長</a></p>
-<p>日本皮膚科学会 皮膚科専門医</p>
+<p>日本専門医機構認定皮膚科専門医<br class="only_smt">（旧：日本皮膚科学会認定皮膚科専門医）</p>
 <p>厚生労働省指定 麻酔科標榜医</p>
 <p>日本内科学会 認定内科医</p>
 </dd>
